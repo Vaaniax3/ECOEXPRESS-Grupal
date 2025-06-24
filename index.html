@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECOEXPRESS - Retiro de reciclaje</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Estilos embebidos -->
+  <style>
+    header {
+      background: linear-gradient(to right, #4caf50, #81c784);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1 id="titulo">ECOEXPRESS</h1>
+    <p>Recogemos tus reciclables desde casa</p>
+  </header>
+
+  <!-- inicio contenedores -->
+   <div class="contenedor-flex">
+
+  <!-- Materiales aceptados -->
+  <section class="materiales">
+    <h2>Materiales que Recibimos</h2>
+    <ul>
+      <li>Cartón - $10 por caja</li>
+      <li>Vidrio - $8 por bolsa</li>
+      <li>Plástico - $6 por bolsa</li>
+      <li>Electrónicos - $15 por unidad</li>
+    </ul>
+  </section>
+
+  <!-- Formulario de reserva -->
+  <section class="formulario">
+    <h2>Reserva tu retiro</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required />
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" required />
+
+      <label for="material">Material:</label>
+      <select id="material">
+        <option>Cartón</option>
+        <option>Vidrio</option>
+        <option>Plástico</option>
+        <option>Electrónicos</option>
+      </select>
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" min="1" required />
+
+      <button type="submit" class="btn">Agendar</button>
+    </form>
+  </section>
+
+  </div>
+
+  <!-- Imagen -->
+  <section class="imagen">
+    <img src="img\garbage-truck.png" alt="Reciclaje" class="img-animada" style="width: 10%; height: auto;" />
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 ECOEXPRESS - Todos los derechos reservados</p>
+    <p>Powered by Grupo 2 - Bootcamp Desarrollo Fullstack Python</p>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
